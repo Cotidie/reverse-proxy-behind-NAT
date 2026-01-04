@@ -1,5 +1,5 @@
 # Reference: https://gofrp.org/en/docs/reference/
-serverAddr = "makinteract.com"
+serverAddr = "your domain" # EDIT! e.g. makinteract.com
 serverPort = 7000
 
 log.to = "/var/log/frpc/frpc.log"
