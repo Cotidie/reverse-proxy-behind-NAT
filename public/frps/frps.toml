@@ -1,0 +1,6 @@
+# Reference: https://gofrp.org/en/docs/reference/
+bindPort = 7000 
+
+log.to = "/var/log/frps/frps.log"
+log.level = "info"
+log.maxDays = 7

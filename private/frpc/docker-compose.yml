@@ -1,0 +1,10 @@
+services:
+  frpc:
+    build: .
+    image: frpc:latest
+    container_name: frpc
+    restart: always
+    network_mode: "host"
+    volumes:
+      - ./frpc.toml:/etc/frp/frpc.toml
+      - ./logs:/var/log/frpc

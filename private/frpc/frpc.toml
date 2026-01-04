@@ -1,0 +1,37 @@
+# Reference: https://gofrp.org/en/docs/reference/
+serverAddr = "makinteract.com"
+serverPort = 7000
+
+log.to = "/var/log/frpc/frpc.log"
+log.level = "info"
+log.maxDays = 7
+
+[[proxies]]
+name = "ssh"
+type = "tcp"
+remotePort = 6000
+localIP = "127.0.0.1"
+localPort = 22   
+
+[[proxies]]
+name = "image-generation"
+type = "tcp"
+remotePort = 5555
+localIP = "127.0.0.1"
+localPort = 5555
+
+[[proxies]]
+name = "web"
+type = "tcp"
+remotePort = 6001
+localIP = "127.0.0.1"
+localPort = 80
+
+[[proxies]]
+name = "https"
+type = "tcp"
+remotePort = 6002
+localIP = "127.0.0.1"
+localPort = 443
+
+

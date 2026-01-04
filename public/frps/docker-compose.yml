@@ -1,0 +1,12 @@
+services:
+  frps:
+    build: .
+    image: frps:latest
+    container_name: frps
+    restart: always
+    network_mode: "host"
+    volumes:
+      - ./frps.toml:/etc/frp/frps.toml
+      - ./logs:/var/log/frps
+    environment:
+      - TZ=Asia/Seoul
