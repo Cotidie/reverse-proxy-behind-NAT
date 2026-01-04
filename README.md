@@ -1,6 +1,6 @@
 # Reverse Proxy Behind NAT
 ![nginx-setting](.images/readme-nginx-structure.png)  
-This repository implements a tunneling architecture using `frp` to expose a private server to the public internet. The public server acts as a simple L4 relay, forwarding HTTP/HTTPS traffic to the private server. The private server handles all Nginx logic—SSL termination, static files, and reverse proxying. This design **decouples the public and private layers**, allowing the private Nginx to operate standalone.
+This repository implements a tunneling architecture using `frp` to expose a private server to the public internet. The public server acts as a simple L4 relay, forwarding HTTP/HTTPS traffic to the private server. The private server handles all Nginx logic such as SSL termination, static files, and reverse proxying. This design **decouples the public and private nginx**, allowing the private `nginx` to operate standalone.
 
 ## Prerequisites
 - Docker and Docker Compose
