@@ -3,6 +3,7 @@
 This repository implements a tunneling architecture using `frp` to expose a private server to the public internet. The public server acts as a simple L4 relay, forwarding HTTP/HTTPS traffic to the private server. The private server handles all Nginx logic—SSL termination, static files, and reverse proxying. This design **decouples the public and private layers**, allowing the private Nginx to operate standalone.
 
 ## Prerequisites
+- Docker and Docker Compose
 - A server with a public IP
 - A private server behind NAT 
 - A domain name pointing to the public IP
