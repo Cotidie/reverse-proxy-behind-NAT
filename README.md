@@ -9,6 +9,7 @@ This repository implements a tunneling architecture using `frp` to expose a priv
 
 ## Setup
 ### frp (Fast Reverse Proxy)
+![frp-tunneling](.images/readme-tunneling.png)  
 #### frps (Public Server)
 Deploy on the public server.
 
